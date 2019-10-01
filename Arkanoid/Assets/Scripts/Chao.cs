@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Chao : MonoBehaviour
 {
+    public GameController controller;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Time.timeScale = 0;
+        controller.Perdeu();
     }
 }
